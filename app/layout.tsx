@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
 
 // import { ToasterProvider } from '@/components/toaster-provider'
-// import { ModalProvider } from '@/components/modal-provider'
+import { ModalProvider } from '@/components/modal-provider'
 // import { CrispProvider } from '@/components/crisp-provider'
 
 import './globals.css'
@@ -24,6 +24,7 @@ export default async function RootLayout({
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
         <body className={font.className}>
+          <ModalProvider />
           {children}
         </body>
       </html>

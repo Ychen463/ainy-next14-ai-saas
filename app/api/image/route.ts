@@ -47,10 +47,9 @@ export async function POST(
             n: parseInt(amount, 10),
             size: resolution,
         });
-        await incrementApiLimit();
-        // if (!isPro) {
-        //     await incrementApiLimit();
-        // }
+        if (!isPro) {
+            await incrementApiLimit();
+        }
 
         return NextResponse.json(response.data);
     } catch (error) {
