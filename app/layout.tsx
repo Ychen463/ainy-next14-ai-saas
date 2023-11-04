@@ -21,11 +21,13 @@ export default async function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={font.className}>
-        {children}
-      </body>
-    </html>
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <body className={font.className}>
+          {children}
+        </body>
+      </html>
+    </ClerkProvider >
     // <ClerkProvider>
     //   <html lang="en" suppressHydrationWarning>
     //     <CrispProvider />

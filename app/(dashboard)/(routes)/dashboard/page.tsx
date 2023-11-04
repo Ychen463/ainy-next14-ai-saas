@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 import { tools } from "@/constants";
 
-export default function HomePage() {
+export default function DashboardPage() {
     const router = useRouter();
 
     return (
