@@ -3,6 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Features:
 
 Tailwind design
+Shadcn/ui
 Tailwind animations and effects
 Full responsiveness
 Clerk Authentication (Email, Google, 9+ Social Logins)
