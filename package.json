@@ -25,7 +25,7 @@
     "clsx": "^2.0.0",
     "crisp-sdk-web": "^1.0.21",
     "lucide-react": "^0.292.0",
-    "next": "14.0.1",
+    "next": "^14.0.1",
     "openai": "^4.15.0",
     "prisma": "^5.5.2",
     "react": "^18",
