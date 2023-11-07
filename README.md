@@ -1,44 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SaaS AI Platform
 
-## Features:
+![Web App Preview](./dashboard-mainpage.png)
+Welcome to the repository of our cutting-edge SaaS AI Platform, where we leverage the power of OpenAI and Replicate API to create images, videos, music, and more, tailored to user requests.
 
-Tailwind design
-Shadcn/ui
-Tailwind animations and effects
-Full responsiveness
-Clerk Authentication (Email, Google, 9+ Social Logins)
-Client form validation and handling using react-hook-form
-Server error handling using react-toast
-Image Generation Tool (Open AI)
-Video Generation Tool (Replicate AI)
-Conversation Generation Tool (Open AI)
-Music Generation Tool (Replicate AI)
-Page loading state
-Stripe monthly subscription
-Free tier with API limiting
-- POST, DELETE, and GET routes in route handlers (app/api)
-- fetch data in server react components by directly accessing database (WITHOUT API! like Magic!)
-- handle relations between Server and Child components!
-- reuse layouts
-Folder structure in Next 14 App Router
+## Live Demo
+Check the live [demo](https://ainy-next14-ai-saas.vercel.app) here!
+
+## Features
+
+- **Tailwind Design**: Utilizing `Shadcn/ui` for a sleek, modern UI with Tailwind animations and full responsiveness.
+- **Clerk Authentication**: Secure login with email, Google, and 9+ social logins.
+- **Form Validation**: Client-side form handling with `react-hook-form`.
+- **Error Handling**: Server-side error feedback with `react-toast`.
+- **AI Tools**: 
+  - Image Generation with OpenAI.
+  - Video Generation with Replicate AI.
+  - Conversation Generation with OpenAI.
+  - Music Generation with Replicate AI.
+- **Subscription Management**: Integrated Stripe for monthly subscription handling.
+- **API Limiting**: Free tier with limited API access to manage resource usage.
+
+## Tech Stack
+
+- Frontend: Tailwind CSS, React.js
+- Backend: Node.js, Express.js
+- Database: [Your Database]
+- Authentication: Clerk
+- AI Services: OpenAI, Replicate AI
+- Payment Processing: Stripe
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+- Stripe account for payment processing
+- Clerk account for authentication
+- Folder structure in Next 14 App Router
+
+### Installation
 
 ## Prerequisites
 Node version 18.x.x
 
-### Cloning the repository
+### 0. Cloning the repository
 
 ```shell
 git clone https://github.com/AntonioErdeljac/next13-ai-saas.git
 ```
 
-### Install packages
+### 1. Install dependencies:
 
 ```shell
 npm i
 ```
 
-### Setup .env file
-
+### 2. Set up your environment variables in a `.env` file 
+Based on the .env.example provided.
 
 ```js
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
@@ -60,7 +79,7 @@ STRIPE_WEBHOOK_SECRET=
 NEXT_PUBLIC_APP_URL="http://localhost:3000"
 ```
 
-### Setup Prisma
+### 3. Setup Prisma
 
 Add MySQL Database (I used PlanetScale)
 
@@ -70,7 +89,7 @@ npx prisma db push
 ```
 
 
-## Start the app
+### 4. Start the app
 Running commands with npm `npm run [command]`
 
 | command         | description                              |
@@ -89,7 +108,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You can start editing the page by modifying `app/dashboard.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
