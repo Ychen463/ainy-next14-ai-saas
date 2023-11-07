@@ -24,7 +24,7 @@ Check the live [demo](https://ainy-next14-ai-saas.vercel.app) here!
 
 - Frontend: Tailwind CSS, React.js
 - Backend: Node.js, Express.js
-- Database: [Your Database]
+- Database: Prisma, PlanetScale
 - Authentication: Clerk
 - AI Services: OpenAI, Replicate AI
 - Payment Processing: Stripe
