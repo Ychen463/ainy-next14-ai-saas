@@ -45,7 +45,7 @@ Check the live [demo](https://ainy-next14-ai-saas.vercel.app) here!
 Node version 18.x.x
 
 ### Structure
-````
+```
 📦 ainy-next14-ai-saas
 ├─ .eslintrc.json
 ├─ .gitignore
